@@ -1,10 +1,6 @@
 import React from "react";
 
 const CharacterList = ({ characters, loading }) => {
-  // if (loading) {
-  //   return <div>Loading...</div>;
-  // }
-
   return (
     <>
       {characters.map((character) => (
