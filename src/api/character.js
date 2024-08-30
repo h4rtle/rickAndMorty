@@ -1,13 +1,11 @@
-import instance from "./instance";
+import instance from "./api";
 
-const getCharacters = async () => {
-  try {
-    const response = await instance.get("/character");
-    return response.data;
-  } catch (error) {
-    console.error(error);
-    return [];
-  }
+export const getCharacters = async () => {
+  const response = await instance.get("/character");
+  return response.data;
 };
 
-export default getCharacters;
+export const getCharacter = async (id) => {
+  const response = await instance.get(`/character/${id}`);
+  return response.data;
+};

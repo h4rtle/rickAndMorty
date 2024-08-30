@@ -1,16 +1,14 @@
 import React from "react";
-import Main from "./components/main";
-import "./asset/shared/style.css";
-import "./asset/shared/normalize.css";
-import { Route, Routes } from "react-router-dom";
-import LoginPage from "./components/auth/login";
+import "./shared/style.css";
+import "./shared/normalize.css";
+import RouteFromApp from "./app/routes/route";
+import { BrowserRouter } from "react-router-dom";
 
 const App = () => {
   return (
-    <Routes>
-      <Route path="/" element={<LoginPage />} />
-      <Route path="/main" element={<Main />} />
-    </Routes>
+    <BrowserRouter>
+      <RouteFromApp />;
+    </BrowserRouter>
   );
 };
 

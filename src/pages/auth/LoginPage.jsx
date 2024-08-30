@@ -7,13 +7,8 @@ const LoginPage = () => {
   const correctPassword = "password";
 
   const onSubmit = async (data) => {
-    if (data.userName === correctLogin && data.password === correctPassword) {
-      navigate("/main", { replace: true });
-      console.log("Успешный вход в систему");
-    } else {
-      console.log("Неверный логин или пароль");
-    }
-    console.log(data);
+    if (data.userName === correctLogin && data.password === correctPassword)
+      navigate("/characters", { replace: true });
   };
 
   return (

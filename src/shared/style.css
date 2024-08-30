@@ -1,4 +1,9 @@
 
+body {
+    min-height: 1080px;
+    background-color: #332D2D ;
+}
+
 main {
     background-color: #332D2D;
     margin: auto auto;
@@ -19,7 +24,14 @@ main {
     display: flex;
     flex-direction: column;
     width: 300px;
-    
+    padding: 5px;
+}
+.character-info a {
+    text-decoration: none;
+    color: rgb(245, 245, 245);
+}
+.character-info a:hover {
+    color: #6e6666;
 }
 .card-field {
     display: flex;
@@ -36,6 +48,7 @@ main {
     border-radius: 2%;
     padding: 0.5%;
     color: rgb(245, 245, 245);
+    
 }
 .loginField { 
     display: flex;
