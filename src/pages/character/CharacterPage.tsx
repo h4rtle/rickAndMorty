@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { getCharacter } from "../../api/character";
 import CharacterItem from "./components/CharacterItem";
+import React from "react";
 
 const CharacterPage = () => {
   const { id } = useParams();

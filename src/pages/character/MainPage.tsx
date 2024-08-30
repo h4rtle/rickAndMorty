@@ -2,8 +2,13 @@ import Image from "../../shared/image/rickAndMortyImage";
 import React, { useEffect, useState } from "react";
 import { getCharacters } from "../../api/character";
 import CharacterItem from "./components/CharacterItem";
+
+interface Character {
+  id: number;
+}
+
 const MainPage = () => {
-  const [characters, setCharacters] = useState([]);
+  const [characters, setCharacters] = useState<Character[]>([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
