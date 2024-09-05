@@ -3,12 +3,12 @@ import React, { useEffect, useState } from "react";
 import { getCharacters } from "../../api/character";
 import CharacterItem from "./components/CharacterItem";
 
-interface Character {
-  id: number;
-}
+// interface Character {
+//   id: number;
+// }
 
 const MainPage = () => {
-  const [characters, setCharacters] = useState<Character[]>([]);
+  const [characters, setCharacters] = useState([]);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {

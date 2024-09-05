@@ -55,6 +55,8 @@ main {
     flex-direction: column;
 }
 .field {
+    background-color: white ;
+
     width: 30%;
     margin: 20% auto;
     border: 1px solid;

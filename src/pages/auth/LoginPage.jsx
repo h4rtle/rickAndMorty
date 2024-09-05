@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 const LoginPage = () => {
   const { register, handleSubmit } = useForm();
   const navigate = useNavigate();
-  const correctLogin = "kirillLoh";
+  const correctLogin = "admin";
   const correctPassword = "password";
 
   const onSubmit = async (data) => {
